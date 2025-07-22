@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <title>EXVEL</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    body { 
+  <style>
+         
+     body { 
         font-family: Arial, sans-serif; 
         margin:0; 
         padding:0; 
@@ -44,6 +43,16 @@
         font-family: 'Optima';
         font-size: x-large;
         color: rgb(0, 0, 0);
+    }
+
+    td:hover {
+        padding: 2px;
+        background-color: rgba(240, 248, 255, 0.292);
+    }
+
+    a:hover {
+        padding: 15px;
+        background-color: #c8a37800;
     }
 
     #div1 {
@@ -126,20 +135,136 @@
     img {
         border-radius: 25px;
     }
-</style>
+
+    .img {
+        box-shadow: 2px 0px whitesmoke;
+    }
+
+    #button {
+        margin-bottom:50px;
+        border-radius: 25px;
+        box-shadow: 2px 0px whitesmoke;
+    }
+
+    #div4 {
+        margin: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-image: url(https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-22%20at%206.13.41%E2%80%AFAM.png?updatedAt=1753145622468);
+        text-align: center;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-size: cover;
+    }
+
+
+    .frame {
+        overflow: hidden;
+        background-color: #ffffff55;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 0px;
+        height: 330px;
+        width: 660px;
+    }
+
+    /*-------------SLIDE ANIMATION-FOOD-------------*/
+
+    @-webkit-keyframes slide {
+        0% {left:0px;}
+        10% {left:660px;}
+        20% {left:1320px;}
+        30% {left:1980px;}
+        40% {left:2640px;}
+        50% {left:2640px;}
+        60% {left:1980px;}
+        70% {left:1320px;}
+        80% {left:660px;}
+        90% {left:0px;}
+        100% {left:0px;}
+    }
+
+    .slider {
+        width: 2640px;
+        height: 330px;
+        margin: 0px 0px 0px -2640px;
+        position: relative;
+        -webkit-animation-name: slide;
+        -webkit-animation-duration: 44s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+
+    .ic {
+        height: 330px;
+        width: 660px;
+        position: relative;
+        float: left;
+
+    }
+
+    .frame2 {
+        overflow: hidden;
+        background-color: #ffffff55;
+        margin-top: 73px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 0px;
+        height: 330px;
+        width: 660px;
+    }
+
+    /*-------------SLIDE ANIMATION-CULTURE-------------*/
+
+     @-webkit-keyframes slide2 {
+        0% {left:0px;}
+        10% {left:660px;}
+        20% {left:1320px;}
+        30% {left:1980px;}
+        40% {left:2640px;}
+        50% {left:2640px;}
+        60% {left:1980px;}
+        70% {left:1320px;}
+        80% {left:660px;}
+        90% {left:0px;}
+        100% {left:0px;}
+    }
+
+    .slider2 {
+        width: 2640px;
+        height: 330px;
+        margin: 0px 0px 0px -2640px;
+        position: relative;
+        -webkit-animation-name: slide2;
+        -webkit-animation-duration: 44s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+
+    #last {
+        margin: 25px;
+    }
+  </style>
+</head>
 <body>
+    <div><a name="home"></a>
     <header>
     <table rules="cols">
         <tr>
-            <td width="15%"><a href="file:///Users/darshilrajawat/Documents/CODES/HTML/WEBSITE/website.html"><img src="https://ik.imagekit.io/dmrehbpdvz/erasebg-transformed.png?updatedAt=1752784122250" height="65" width="150"></a></td>
-            <td width="21.25%"><a href="#Heritage">HERITAGE</a></td>
-            <td width="21.25%"><a href="#Attractions">ATTRACTIONS</a></td>
-            <td width="21.25%"><a href="#food">FOOD n CULTURE</a></td>
-            <td width="21.25%"><a href="#nature">FACTS n TALKS</a></td>
+            <td width="15%"><a class="hvr" href="#home"><img src="https://ik.imagekit.io/dmrehbpdvz/erasebg-transformed.png?updatedAt=1752784122250" height="65" width="150" style="border-radius: 0%;"></a></td>
+            <td width="21.25%"><a class="hvr" href="#Heritage">HERITAGE</a></td>
+            <td width="21.25%"><a class="hvr" href="#Attractions">ATTRACTIONS</a></td>
+            <td width="21.25%"><a class="hvr" href="#FnF">FOOD n FEST</a></td>
+            <td width="21.25%"><a class="hvr" href="#FnT">FACTS n TALKS</a></td>
             </td>
         </tr>
     </table>
     </header>
+    </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr width="76%" align="centre"><hr width="98%" align="centre">
     <div id="div1"><a name="Heritage"></a>
         <p>
@@ -165,7 +290,7 @@ hubs, street bazaars and the latest malls, street food and international cuisine
 -nosed discussions on business strategy and discourses on Gandhian philosophy. What is truly
 remarkable about this city is the reverence for the past with simultaneous vision for future.
             </pre>
-    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-18%20at%2012.04.09%E2%80%AFAM.png?updatedAt=1752780424635" height="50px" width="160px" style="padding-bottom:90px; border-radius: 0px;"></img>
+    <a href="https://www.incredibleindia.gov.in/en/gujarat/ahmedabad"><img id="button" src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-18%20at%2012.04.09%E2%80%AFAM.png?updatedAt=1752780424635" height="50px" width="180px"></a>
     </p>
     </div>
     <hr width="98%" align="centre"><hr width="76%" align="centre"><br><br><hr width="76%" align="centre"><hr width="98%" align="centre">
@@ -177,16 +302,62 @@ remarkable about this city is the reverence for the past with simultaneous visio
         <div id="div3">
             <div class="diva">
                 <pre>
-<img src="https://images.pexels.com/photos/1630114/pexels-photo-1630114.jpeg" height="350px" width="450px">  <img src="https://i.pinimg.com/1200x/28/36/09/283609cd10d30959a002665fc803e18b.jpg" height="350px" width="450px">  <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-17%20at%207.59.39%E2%80%AFPM.png?updatedAt=1752780428740" height="350px" width="450px">
+<a href="https://www.gujarattourism.com/central-zone/ahmedabad/sabarmati-ashram.html"><img class="img" src="https://images.pexels.com/photos/1630114/pexels-photo-1630114.jpeg" height="350px" width="450px"></a>  <a href="https://www.gujarattourism.com/central-zone/ahmedabad/sabarmati-riverfront.html"><img class="img" src="https://i.pinimg.com/1200x/28/36/09/283609cd10d30959a002665fc803e18b.jpg" height="350px" width="450px"></a>  <a href="https://www.gujarattourism.com/central-zone/ahmedabad/kankaria-lake.html"><img class="img" src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-17%20at%207.59.39%E2%80%AFPM.png?updatedAt=1752780428740" height="350px" width="450px"></a>
                 </pre>
             </div>
             <div class="diva">
                 <pre>
-<img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-17%20at%208.01.57%E2%80%AFPM.png?updatedAt=1752780428181" height="350px" width="450px">  <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-17%20at%207.26.59%E2%80%AFPM.png?updatedAt=1752780425961" height="350px" width="450px">  <img src="https://ik.imagekit.io/dmrehbpdvz/pexels-momentsbypeterpatel-11835213.jpg?updatedAt=1752780428549" height="350px" width="450px">
+<a href="https://www.gujarattourism.com/central-zone/ahmedabad/auto-world-vintage-car-museum.html"><img class="img" src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-17%20at%208.01.57%E2%80%AFPM.png?updatedAt=1752780428181" height="350px" width="450px"></a>  <a href="https://www.gujarattourism.com/central-zone/ahmedabad/science-city.html"><img class="img" src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-17%20at%207.26.59%E2%80%AFPM.png?updatedAt=1752780425961" height="350px" width="450px"></a>  <a href="https://www.gujarattourism.com/central-zone/gandhinagar/adalaj-ni-vav.html"><img class="img" src="https://ik.imagekit.io/dmrehbpdvz/pexels-momentsbypeterpatel-11835213.jpg?updatedAt=1752780428549" height="350px" width="450px"></a>
                 </pre>
             </div>
         </div>
         </p>
     </div>
     <hr width="98%" align="centre"><hr width="76%" align="centre"><br><br><hr width="76%" align="centre"><hr width="98%" align="centre">
+    <div id="div4"><a name="FnF"></a>
+        <br><br><br><br><br>
+        <div class="frame">
+            <div class="slider">
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-21%20at%209.38.45%E2%80%AFPM.png?updatedAt=1753145622433" style="border-radius: 0px;">
+                </div>
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-21%20at%209.38.53%E2%80%AFPM.png?updatedAt=1753145622450" style="border-radius: 0px;">
+                </div>
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-21%20at%209.39.02%E2%80%AFPM.png?updatedAt=1753145622424" style="border-radius: 0px;">
+                </div>
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-21%20at%209.39.09%E2%80%AFPM.png?updatedAt=1753145622440" style="border-radius: 0px;">
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="frame2">
+            <div class="slider2">
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-22%20at%201.11.42%E2%80%AFAM.png?updatedAt=1753145622390" style="border-radius: 0px;">
+                </div>
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-22%20at%201.15.46%E2%80%AFAM.png?updatedAt=1753145622419" style="border-radius: 0px;">
+                </div>
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-22%20at%201.11.42%E2%80%AFAM.png?updatedAt=1753145622390" style="border-radius: 0px;">
+                </div>
+                <div class="ic">
+                    <img src="https://ik.imagekit.io/dmrehbpdvz/Screenshot%202025-07-22%20at%201.15.46%E2%80%AFAM.png?updatedAt=1753145622419" style="border-radius: 0px;">
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <hr width="98%" align="centre"><hr width="76%" align="centre"><br><br><hr width="76%" align="centre"><hr width="98%" align="centre">
+    <div id="div2"><a name="FnT"></a>
+        <p>
+            <h2 class="h2">FACTS n TALKS</h2>
+        </p>
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/sabarmati-gandhi-ashram-ahmedabad-gujarat-city-ff?qlt=82&ts=1742170009471" height="500px" width="400px" align="left">
+            Sabarmati Ashram was the starting point
+    </div>
 </html>
